@@ -2,44 +2,45 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noticia | Gura News</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="main.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gura News</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="watermark" onclick="window.open('https://wa.me/573001234567', '_blank')">
-    <img src="gura.png" alt="Gura News" />
-    <span>Gura News</span>
-  </div>
-
-  <header>
-    <h1>Noticia Destacada</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="noticia.html">Noticias</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="redes.html">Redes Sociales</a></li>
-      </ul>
+  <header class="header">
+    <div class="logo">📰 Gura News</div>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="redes.html">Redes</a>
+      <a href="noticia.html" class="activo">Noticia</a>
     </nav>
   </header>
 
-  <main>
-    <article class="noticia">
-      <h2>Título de la noticia</h2>
-      <p class="fecha">Publicado el 20 de julio de 2025</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum orci a nunc fermentum, in imperdiet sapien posuere.</p>
-      <ul>
-        <li>Hecho 1 relevante</li>
-        <li>Hecho 2 interesante</li>
-        <li>Hecho 3 confirmado</li>
-      </ul>
-    </article>
+  <main class="contenido">
+    <h1 class="titulo-noticia">🚧 Situación crítica en la vía entre Ubaque y Choachí</h1>
+    <p class="fecha">Publicado el 20 de julio de 2025</p>
+    <div class="cuerpo-noticia">
+      <p>
+        La vía que conecta <strong>Ubaque con Choachí</strong> se encuentra en un estado de <span class="destacado">deterioro avanzado</span> desde que el gobierno actual asumió el poder, poniendo en riesgo la vida de los habitantes y evidenciando el claro abandono sistemático del <strong>Estado neoliberal</strong> hacia las comunidades campesinas.
+      </p>
+      <p>
+        El sector de <strong>Guaza</strong> está al borde del colapso total, con múltiples <span class="alerta">hundimientos</span> y <span class="alerta">deslizamientos</span> que pronto provocarán el <strong>aislamiento total</strong> de toda la región y el colapso económico de miles de familias campesinas.
+      </p>
+      <p>
+        Todo esto ocurre mientras las <strong>autoridades corruptas</strong> no ofrecen soluciones concretas, porque claramente quieren que la gente abandone estos territorios.
+      </p>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2025 Gura News.</p>
+  <footer class="footer">
+    <p>&copy; 2025 Gura News - Todos los derechos reservados</p>
   </footer>
+
+  <div class="marca-agua" onclick="window.location.href='https://wa.me/57TU_NUMERO'">
+    <img src="gura-logo.png" alt="Marca de agua">
+    <span>Gura News</span>
+  </div>
 </body>
 </html>
