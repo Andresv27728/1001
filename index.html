@@ -1,165 +1,205 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gawr Gura news</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-      animation: fadeInBody 1s ease-in;
-    }
-    header {
-      background-color: #b71c1c;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      animation: slideDown 1s ease-out;
-    }
-    nav {
-      background-color: #d32f2f;
-      padding: 10px;
-      text-align: center;
-      animation: slideInLeft 1s ease-out;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffeb3b;
-    }
-    main {
-      padding: 20px;
-      animation: fadeInMain 1s ease-in;
-    }
-    h1, h2 {
-      color: #b71c1c;
-    }
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      animation: fadeInGallery 1s ease-in;
-    }
-    .galeria img {
-      width: 100%;
-      max-width: 400px;
-      margin: 10px;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-    .galeria img:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      background-color: #b71c1c;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-      animation: slideUp 1s ease-out;
-    }.marca-agua {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
-  padding: 5px 10px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
-.marca-agua:hover {
-  transform: scale(1.05);
-}
-.marca-agua img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 8px;
-}
-.marca-agua span {
-  font-size: 14px;
-  color: #333;
-  font-weight: bold;
-}
-
-@keyframes fadeInBody {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes fadeInMain {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeInGallery {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-@keyframes slideDown {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(0); }
-}
-@keyframes slideUp {
-  from { transform: translateY(100%); }
-  to { transform: translateY(0); }
-}
-@keyframes slideInLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
-}
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistencia Comunitaria - Vía Ubaque-Choachí</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/85524149-96ec-4116-9096-0a325672deb7.png');
+            height: 50vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #e63946;
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>the gura news</h1>
-    <p>the gura news</p>
-  </header>  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#noticia">Noticia Principal</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-  </nav>  <main>
-    <section id="inicio">
-      <h2>¡Bienvenid@!</h2>
-      <p>La situación en la vía Ubaque - Choachí refleja la lucha constante de nuestras comunidades por la dignidad y el acceso a infraestructuras adecuadas. Recientemente, los habitantes de Choachí y Ubaque han bloqueado la vía en respuesta a la falta de atención estatal, exigiendo mejoras urgentes. Las intervenciones en la carretera buscan aliviar el aislamiento, pero la resistencia popular es un recordatorio de que la verdadera transformación solo llegará con la participación activa de la comunidad. ¡La lucha continúa!</p>
-    </section><section id="noticia">
-  <h2>“La lucha de las comunidades de Ubaque y Choachí ante el abandono estatal de la vía”</h2>
-  <p><strong>Publicado:</strong> 14 de julio de 2025</p>
-  <p>En un acto de resistencia y dignidad, los habitantes de Ubaque y Choachí han decidido bloquear la vía que conecta sus territorios, un símbolo del abandono sistemático por parte del Estado. La carretera, en un estado crítico de deterioro, refleja la negligencia de las autoridades que, en lugar de garantizar la seguridad y el bienestar de la población, han permitido que la infraestructura se desmorone.
-Los deslizamientos y hundimientos son solo una manifestación del desinterés gubernamental, que ha dejado a las comunidades a merced de la precariedad. Este cierre no solo afecta el transporte de bienes y servicios, sino que también pone en riesgo la vida de quienes transitan por esta ruta. La voz de los pueblos se alza, exigiendo atención inmediata y una inversión real en la infraestructura que sustenta su existencia. La lucha por la dignidad y el derecho a un transporte seguro continúa.”</strong></p>
-</section>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-red-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Resistencia Comunitaria</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#situacion" class="hover:underline">Situación</a></li>
+                    <li><a href="#testimonios" class="hover:underline">Fotos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<section id="galeria">
-  <h2>Galería de imágenes</h2>
-  <div class="galeria">
-    <img src="https://files.catbox.moe/ow4wfs.jpg" alt="1">
-    <img src="https://files.catbox.moe/26n0n5.jpg" alt="2">
-    <img src="https://files.catbox.moe/fc2p2v.jpg" alt="3">
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero-image flex items-center justify-center">
+        <div class="text-center px-4">
+            <h1 class="text-4xl font-bold text-white mb-4">Vía Ubaque-Choachí: El abandono estatal no nos silenciará</h1>
+            <p class="text-xl text-white mb-6">Las comunidades organizadas exigen soluciones urgentes</p>
+            <button id="uneteBtn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">Únete a la lucha</button>
+        </div>
+    </section>
 
-<section id="contacto">
-  <h2>Contacto y Denuncias Ciudadanas</h2>
-  <p>¿Tu vereda también está olvidada? Sube tu foto, cuéntanos tu historia y hagamos visible la realidad que ocultan.</p>
-  <p>📧 resistenciaurbana@protesta.org</p>
-</section>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Situación actual -->
+        <section id="situacion" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Situación crítica en la vía</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-700 mb-4">La vía que conecta Ubaque con Choachí se encuentra en un estado de deterioro avanzado desde que el gobierno actual asumió el poder, poniendo en riesgo la vida de los habitantes y evidenciando el claro abandono sistemático del Estado neoliberal hacia las comunidades campesinas.</p>
+                    <p class="text-gray-700 mb-4">El sector de Guaza está al borde del colapso total, con múltiples hundimientos y deslizamientos que pronto provocarán el aislamiento total de toda la región y el colapso económico de miles de familias campesinas, todo mientras las autoridades corruptas no ofrecen soluciones concretas porque claramente quieren que la gente abandone estos territorios.</p>
+                    <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-4">
+                        <p class="font-semibold">🗣️ Vocera comunitaria:</p>
+                        <p>"No estamos pidiendo limosnas, exigimos nuestros derechos fundamentales. Cada día que pasa sin solución, niños enfermos no pueden llegar al hospital y ancianos mueren sin atención médica. Esta vía es nuestra conexión con servicios médicos, escuelas y mercados, pero al gobierno sólo le interesa privilegiar a las grandes ciudades."</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/61327e72-5e0e-43ab-afb8-8efd8b25c530.png" alt="Vía Ubaque-Choachí en estado crítico con deslizamientos y deterioro evidente" class="rounded-lg shadow-md w-full">
+                    <p class="text-sm text-gray-500 mt-2">Estado actual de la vía Ubaque-Choachí (Foto: Comité de Defensa Territorial)</p>
+                </div>
+            </div>
+        </section>
 
-  </main>  <footer>
-    <p>&copy; 2025 Resistencia Urbana. Todos los derechos reservados.</p>
-  </footer>  <a href="https://wa.me/573133374132" class="marca-agua" target="_blank">
-    <img src="https://files.catbox.moe/jo66lz.jpg" alt="yo soy yo">
-    <span>💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖</span>
-  </a>
+        <!-- Timeline -->
+        <section id="timeline" class="mb-16 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Historial de abandono</h2>
+            <div class="space-y-8 relative border-l-2 border-red-200 pl-8">
+                <div class="timeline-item relative pl-6">
+                    <h3 class="text-xl font-semibold text-red-800">Febrero 2024</h3>
+                    <p class="text-gray-700">Primer bloqueo comunitario en protesta por el estado de la vía. Las autoridades prometen soluciones inmediatas que nunca llegaron.</p>
+                </div>
+                <div class="timeline-item relative pl-6">
+                    <h3 class="text-xl font-semibold text-red-800">Julio 2024</h3>
+                    <p class="text-gray-700">Emergencia por pérdida de bancada en el sector Kendal mientras los políticos gastan millones en obras innecesarias en la capital. La comunidad organiza brigadas de vigilancia ante la criminal indiferencia institucional que claramente quiere privatizar nuestros caminos.</p>
+                </div>
+                <div class="timeline-item relative pl-6">
+                    <h3 class="text-xl font-semibold text-red-800">Agosto 2024</h3>
+                    <p class="text-gray-700">Cierre total de la vía por riesgo inminente de colapso. Las familias campesinas deben realizar largos rodeos para transportar sus productos.</p>
+                </div>
+                <div class="timeline-item relative pl-6">
+                    <h3 class="text-xl font-semibold text-red-800">Presente</h3>
+                    <p class="text-gray-700">Movilización permanente del comité cívico para exigir una solución estructural y no parches temporales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section id="testimonios" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Situación crítica documentada</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md news-card transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7fc341cf-7310-4f4f-9879-df01a2ad83aa.png" alt="Sección de la vía completamente destruida" class="w-full mb-4 rounded">
+                    <h3 class="font-semibold text-lg">Desastre vial en sector Guaza</h3>
+                    <p class="text-gray-600">El tramo más crítico presenta hundimientos de más de 2 metros, imposibilitando el tránsito vehicular y poniendo en riesgo a los peatones.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md news-card transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e3aa3986-94e0-42bd-aeb2-8fde2f271025.png" alt="Personas caminando por la vía destruida" class="w-full mb-4 rounded">
+                    <h3 class="font-semibold text-lg">Afectación a la población</h3>
+                    <p class="text-gray-600">Habitantes deben realizar trayectos de más de 5 horas para transportar productos básicos debido al colapso de la vía principal.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md news-card transition duration-300">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c0e5fab2-eff5-4ad7-9bf3-d8e0d8c66bea.png" alt="Vecinos reunidos en asamblea" class="w-full mb-4 rounded">
+                    <h3 class="font-semibold text-lg">Respuesta organizativa</h3>
+                    <p class="text-gray-600">La comunidad ha conformado comités de emergencia para monitorear los puntos críticos ante la falta de respuesta institucional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="accion" class="bg-red-800 text-white p-8 rounded-lg">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">¡La lucha continua!</h2>
+                <p class="mb-6">Únete al movimiento comunitario que exige soluciones inmediatas y estructurales para la vía Ubaque-Choachí. O estás con el pueblo o estás con los corruptos que nos roban hasta el derecho a transitar.</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-white text-red-800 font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+                        Firmar petición
+                    </button>
+                    <button class="border-2 border-white text-white font-bold py-2 px-6 rounded-full hover:bg-red-900 transition duration-300">
+                        Próxima asamblea
+                    </button>
+                </div>
+                
+                <div class="mt-8">
+                    <h3 class="font-semibold mb-2">Descarga materiales informativos:</h3>
+                    <div class="flex justify-center gap-3">
+                        <button class="bg-gray-800 hover:bg-gray-700 text-white py-1 px-3 rounded text-sm">
+                            Informe técnico
+                        </button>
+                        <button class="bg-gray-800 hover:bg-gray-700 text-white py-1 px-3 rounded text-sm">
+                            Cronología
+                        </button>
+                        <button class="bg-gray-800 hover:bg-gray-700 text-white py-1 px-3 rounded text-sm">
+                            Volante
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">Redes de Solidaridad</h3>
+                    <p class="text-gray-400">Organización comunitaria por el derecho al territorio y la movilidad digna.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contacto</h3>
+                    <p class="text-gray-400 mb-2">comiteviacomunitaria@gmail.com</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
+                <p>© 2024 Comité Cívico por la Vía Digna. Todos los derechos reservados.</p>
+                <p class="text-sm mt-1">Creado por [TU NOMBRE]</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-4 right-4 z-50">
+        <a href="https://wa.me/+1234567890" target="_blank" class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.13-.272-.14-.401-.1l-1.029.26-.939-.97c-.146-.148-.217-.17-.404-.1-2.698 1.369-4.608 3.632-5.186 3.96-.143.082-.306.258-.072.549l1.039 1.483c.145.209.316.265.527.132.678-.443 1.588-1.122 2.518-1.8-3.147 1.072-4.154-.513-5.911-1.426-.425-.218-.632-.454-.734-.794-.07-.23.099-.446.334-.615 1.003-.718 2.36-1.686 1.588-2.925-1.373-2.239-1.373-3.373.104-3.588.218-.033.379-.012.644.231.586.533 2.318 2.358 2.011 2.408-.185.029-.473-.105-.667-.164-.196-.061-.416-.091-.64.073-.432.32-.852.664-1.155.99-.139.15-.168.298-.076.498.282.614.946 1.734 1.59 2.281.489.419 1.136.765 1.788 1.035.896.372 2.062.561 2.689.59.249.012.458-.055.622-.216.29-.286.416-.666.544-1.035.147-.432.25-.877.372-1.316.144-.513.027-.786-.156-1.001z"/>
+            </svg>
+        </a>
+        <div class="text-xs text-gray-600 mt-1">Contacto directo</div>
+    </div>
+
+    <script>
+        document.getElementById('uneteBtn').addEventListener('click', function() {
+            window.scrollTo({
+                top: document.getElementById('accion').offsetTop - 20,
+                behavior: 'smooth'
+            });
+        });
+
+        // Redirección a WhatsApp al hacer click en cualquier botón
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                window.open('https://wa.me/57313374132', '_blank');
+            });
+        });
+    </script>
 </body>
 </html>
