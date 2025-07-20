@@ -1,10 +1,13 @@
-// Cambiar título si cambia de pestaña
+// Cambiar el título si el usuario cambia de pestaña
 let originalTitle = document.title;
+
 document.addEventListener("visibilitychange", () => {
   if (document.hidden) {
     document.title = "¡Vuelve a Gura News!";
   } else {
-    document.title = originalTitle;
-    alert("¡Gracias por volver!");
+    document.title = "Gracias por volver a Gura News ❤️";
+    setTimeout(() => {
+      document.title = originalTitle;
+    }, 2000);
   }
 });
