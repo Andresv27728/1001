@@ -1,40 +1,165 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gura News</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistencia Urbana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      animation: fadeInBody 1s ease-in;
+    }
+    header {
+      background-color: #b71c1c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+    nav {
+      background-color: #d32f2f;
+      padding: 10px;
+      text-align: center;
+      animation: slideInLeft 1s ease-out;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    main {
+      padding: 20px;
+      animation: fadeInMain 1s ease-in;
+    }
+    h1, h2 {
+      color: #b71c1c;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      animation: fadeInGallery 1s ease-in;
+    }
+    .galeria img {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      animation: slideUp 1s ease-out;
+    }.marca-agua {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+.marca-agua:hover {
+  transform: scale(1.05);
+}
+.marca-agua img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.marca-agua span {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInMain {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInGallery {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+  </style>
 </head>
 <body>
-  <div class="watermark" onclick="window.open('https://wa.me/573001234567', '_blank')">
-    <img src="gura.png" alt="Gura News" />
-    <span>Gura News</span>
-  </div>
-
   <header>
-    <h1>Bienvenido a Gura News</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="noticia.html">Noticias</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="redes.html">Redes Sociales</a></li>
-      </ul>
-    </nav>
-  </header>
+    <h1>the gura news</h1>
+    <p>Las vías </p>
+  </header>  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#noticia">Noticia Principal</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>  <main>
+    <section id="inicio">
+      <h2>¡Bienvenid@!</h2>
+      <p>Un medio que alza la voz de los pueblos olvidados. Desde Ubaque hasta cada rincón ignorado por el poder, denunciamos la injusticia y exigimos dignidad.</p>
+    </section><section id="noticia">
+  <h2>“La lucha de las comunidades de Ubaque y Choachí ante el abandono estatal de la vía”</h2>
+  <p><strong>Publicado:</strong> 14 de julio de 2025</p>
+  <p>En un acto de resistencia y dignidad, los habitantes de Ubaque y Choachí han decidido bloquear la vía que conecta sus territorios, un símbolo del abandono sistemático por parte del Estado. La carretera, en un estado crítico de deterioro, refleja la negligencia de las autoridades que, en lugar de garantizar la seguridad y el bienestar de la población, han permitido que la infraestructura se desmorone.
+Los deslizamientos y hundimientos son solo una manifestación del desinterés gubernamental, que ha dejado a las comunidades a merced de la precariedad. Este cierre no solo afecta el transporte de bienes y servicios, sino que también pone en riesgo la vida de quienes transitan por esta ruta. La voz de los pueblos se alza, exigiendo atención inmediata y una inversión real en la infraestructura que sustenta su existencia. La lucha por la dignidad y el derecho a un transporte seguro continúa.”</strong></p>
+</section>
 
-  <main>
-    <section class="presentacion">
-      <h2>Últimas noticias del momento</h2>
-      <p>Descubre lo que está pasando en el mundo con Gura News.</p>
-      <a class="btn" href="noticia.html">Leer noticia destacada</a>
-    </section>
-  </main>
+<section id="galeria">
+  <h2>Galería de imágenes</h2>
+  <div class="galeria">
+    <img src="https://files.catbox.moe/0jy4wy.mp4" alt="nn">
+    <img src="https://files.catbox.moe/26n0n5.jpg" alt="nn">
+    <img src="https://files.catbox.moe/fc2p2v.jpg" alt="nn">
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Gura News. Todos los derechos reservados.</p>
-  </footer>
+<section id="contacto">
+  <h2>Contacto y Denuncias Ciudadanas</h2>
+  <p>¿Tu vereda también está olvidada? Sube tu foto, cuéntanos tu historia y hagamos visible la realidad que ocultan.</p>
+  <p>📧 resistenciaurbana@protesta.org</p>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 Resistencia Urbana. Todos los derechos reservados.</p>
+  </footer>  <a href="https://wa.me/573133374132" class="marca-agua" target="_blank">
+    <img src="https://files.catbox.moe/jo66lz.jpg" alt="yo soy yo">
+    <span>💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖</span>
+  </a>
 </body>
 </html>
