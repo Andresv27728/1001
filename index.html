@@ -1,108 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GURA NEWS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌊 GURA NEWS 🦈</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
-      background-color: #e3f2fd; /* Fondo azul claro */
-      color: #0d47a1; /* Texto azul oscuro */
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #fce4ec);
+      color: #0d47a1;
       animation: fadeInBody 1s ease-in;
     }
     header {
-      background-color: #0d47a1; /* Azul oscuro */
+      background: linear-gradient(45deg, #0d47a1, #1565c0);
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 30px 20px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 32px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
       animation: slideDown 1s ease-out;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
     }
     nav {
-      background-color: #1976d2; /* Azul medio */
-      padding: 10px;
+      background-color: #1976d2;
+      padding: 14px;
       text-align: center;
       animation: slideInLeft 1s ease-out;
     }
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
+      font-size: 17px;
       font-weight: bold;
-      transition: color 0.3s ease;
+      transition: 0.3s ease;
     }
     nav a:hover {
-      color: #ffeb3b; /* Color amarillo al pasar el mouse */
+      color: #ffeb3b;
+      text-shadow: 0 0 5px white;
     }
     main {
-      padding: 20px;
+      padding: 30px 20px;
       animation: fadeInMain 1s ease-in;
     }
     h1, h2 {
-      color: #0d47a1; /* Azul oscuro */
+      font-family: 'Fredoka One', cursive;
+      color: #0d47a1;
     }
+    section {
+      margin-bottom: 50px;
+    }
+    h2::before {
+      content: "⭐ ";
+      color: #ff4081;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
     .galeria {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 20px;
+      margin-top: 20px;
       animation: fadeInGallery 1s ease-in;
     }
     .galeria img {
       width: 100%;
-      max-width: 400px;
-      margin: 10px;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      border-radius: 12px;
+      border: 4px solid #90caf9;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
     .galeria img:hover {
-      transform: scale(1.05);
+      transform: scale(1.05) rotate(1deg);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+      border-color: #f48fb1;
     }
+
     footer {
-      background-color: #0d47a1; /* Azul oscuro */
+      background-color: #0d47a1;
       color: white;
       text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+      padding: 20px 10px;
+      font-size: 14px;
       animation: slideUp 1s ease-out;
+      letter-spacing: 1px;
     }
+
     .marca-agua {
       position: fixed;
       bottom: 15px;
       right: 15px;
-      background-color: rgba(255, 255, 255, 0.7);
-      border-radius: 8px;
-      padding: 5px 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 14px;
+      padding: 6px 12px;
       display: flex;
       align-items: center;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       z-index: 1000;
       transition: transform 0.3s ease;
     }
     .marca-agua:hover {
-      transform: scale(1.05);
+      transform: scale(1.07);
     }
     .marca-agua img {
-      width: 30px;
-      height: 30px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
-      margin-right: 8px;
+      margin-right: 10px;
     }
     .marca-agua span {
-      font-size: 14px;
-      color: #0d47a1; /* Azul oscuro */
+      font-size: 15px;
+      color: #0d47a1;
       font-weight: bold;
     }
 
+    /* Animaciones */
     @keyframes fadeInBody {
       from { opacity: 0; }
       to { opacity: 1; }
     }
     @keyframes fadeInMain {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
     @keyframes fadeInGallery {
@@ -125,47 +155,52 @@
 </head>
 <body>
   <header>
-    <h1>GAWR GURA</h1>
-    <p>Estado de las vías 🛤</p>
+    <h1>🌊 GURA NEWS 🦈</h1>
+    <p>🛤 Estado actual de las vías rurales</p>
   </header>
+
   <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#noticia">Noticia</a>
-    <a href="#galeria">Imágenes</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#inicio">🏠 Inicio</a>
+    <a href="#noticia">📰 Noticia</a>
+    <a href="#galeria">📷 Galería</a>
+    <a href="#contacto">📩 Contacto</a>
   </nav>
+
   <main>
     <section id="inicio">
-      <h2>¡Bienvenid@!</h2>
-      <p>Un medio que alza la voz de los pueblos olvidados. Desde Ubaque hasta cada rincón ignorado por el poder, denunciamos la injusticia y exigimos dignidad.</p>
+      <h2>¡Bienvenid@ a Gura News!</h2>
+      <p>📢 Un medio que alza la voz de los pueblos olvidados. Desde <strong>Ubaque</strong> hasta cada rincón ignorado por el poder, denunciamos la injusticia y exigimos dignidad para todos los territorios rurales de nuestra nación.</p>
     </section>
+
     <section id="noticia">
-      <h2>“La lucha de las comunidades de Ubaque y Choachí ante el abandono estatal de la vía”</h2>
-      <p><strong>Publicado:</strong> 14 de julio de 2025</p>
-      <p>En un acto de resistencia y dignidad, los habitantes de Ubaque y Choachí han decidido bloquear la vía que conecta sus territorios, un símbolo del abandono sistemático por parte del Estado. La carretera, en un estado crítico de deterioro, refleja la negligencia de las autoridades que, en lugar de garantizar la seguridad y el bienestar de la población, han permitido que la infraestructura se desmorone. Los deslizamientos y hundimientos son solo una manifestación del desinterés gubernamental, que ha dejado a las comunidades a merced de la precariedad. Este cierre no solo afecta el transporte de bienes y servicios, sino que también pone en riesgo la vida de quienes transitan por esta ruta. La voz de los pueblos se alza, exigiendo atención inmediata y una inversión real en la infraestructura que sustenta su existencia. La lucha por la dignidad y el derecho a un transporte seguro continúa.”</strong></p>
+      <h2>La lucha de las comunidades ante el abandono estatal</h2>
+      <p><strong>🗓️ Publicado:</strong> 14 de julio de 2025</p>
+      <p>En un acto de resistencia y dignidad, los habitantes de <strong>Ubaque</strong> y <strong>Choachí</strong> bloquearon la vía que conecta sus territorios. Esta carretera, deteriorada hasta el abandono, simboliza la negligencia del Estado. 🌧️💥</p>
+      <p>Los constantes deslizamientos y hundimientos reflejan el desinterés institucional. Este cierre no solo dificulta la movilidad, sino que pone en riesgo vidas humanas. Exigen inversión real y urgente. ¡La voz del pueblo retumba exigiendo justicia! ✊</p>
     </section>
 
     <section id="galeria">
-      <h2>Galería de Imágenes</h2>
+      <h2>Imágenes de la situación actual 🖼️</h2>
       <div class="galeria">
-        <img src="https://files.catbox.moe/0jy4wy.mp4" alt="IMAGEN">
-        <img src="https://files.catbox.moe/26n0n5.jpg" alt="IMAGEN">
-        <img src="https://files.catbox.moe/fc2p2v.jpg" alt="IMAGEN">
+        <img src="https://files.catbox.moe/26n0n5.jpg" alt="Daño en carretera">
+        <img src="https://files.catbox.moe/fc2p2v.jpg" alt="Protesta de la comunidad">
       </div>
     </section>
 
     <section id="contacto">
-      <h2>Contacto</h2>
-      <p>UWU XD</p>
-      <p>NO HAY</p>
+      <h2>Contáctanos 📬</h2>
+      <p>🦈 Por ahora, no tenemos contacto directo.</p>
+      <p>💌 Muy pronto tendrás un formulario para comunicarte con nosotros.</p>
     </section>
   </main>
+
   <footer>
-    <p>&copy; Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ Todos los derechos reservados.</p>
+    <p>💙 &copy; Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ | Todos los derechos reservados | Gura Style 🦈</p>
   </footer>
+
   <a href="https://wa.me/573133374132" class="marca-agua" target="_blank">
-    <img src="https://files.catbox.moe/jo66lz.jpg" alt="yo soy yo">
-    <span>💖💝 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💝 💖</span>
+    <img src="https://files.catbox.moe/jo66lz.jpg" alt="yo soy yo" />
+    <span>💖 Y⃟o⃟ S⃟o⃟y⃟ Y⃟o⃟ 💖</span>
   </a>
 </body>
 </html>
